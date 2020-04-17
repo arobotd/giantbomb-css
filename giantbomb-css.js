@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         GiantBomb FullWidth
 // @namespace    http://robot-d.com
-// @version      0.2
-// @description  Removes padding from GiantBomb.com chat pages 
-// @author       Adam Drobotij
+// @version      1.0
+// @description  try to take over the world!
+// @author       You
 // @match        https://www.giantbomb.com/*
 // @grant        none
 // ==/UserScript==
@@ -44,6 +44,14 @@
        }
        .chat-history__username, .chat-history__username:visited {
           color: #9d9d9d !important;
+       }
+       .js-chat-tab-poll-panel .chat-panel__container {
+          padding-top: 0 !important;
+       }
+       .poll-title {
+          font-size: 14px;
+          line-height: 1.5;
+          margin-bottom: 5px;
        }
     `)
 })();
